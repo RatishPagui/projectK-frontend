@@ -8,7 +8,7 @@ export class ReviewserviceService {
 
   constructor( private http1:HttpClient) { }
 
-  apiUrl = "http://localhost:5000/api/reviews";
+  apiUrl = "https://project-k-backend.vercel.app/api/reviews";
   getReviewdata() {
     return this.http1.get(this.apiUrl)
   }
